@@ -13,7 +13,7 @@ function FormContact() {
     <br></br>
    <Container>
     <Row>
-        <Col sm = {6}>
+        <Col sm = {4}>
         <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -36,7 +36,7 @@ function FormContact() {
     </Form>
         
         </Col>
-        <Col>
+        <Col sm = {4}>
        
         <ListGroup variant="flush">
       <ListGroup.Item> <Image width={50} src={waku}></Image> {''}+62-123-4567-8999</ListGroup.Item>
