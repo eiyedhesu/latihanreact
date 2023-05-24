@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/newsapi/Navbar'
-import SearchBar from './components/newsapi/Search';
+import SearchFungsi from './components/newsapi/SearchFung';
 function App() {
   return (
     <div className="App">
@@ -9,7 +9,7 @@ function App() {
        <h1>Portal Web Berita</h1>
        <br></br>
        <div className='Berita-container'>
-       <SearchBar/>
+       <SearchFungsi/>
        </div>
     </div>
   );
