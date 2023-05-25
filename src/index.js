@@ -4,11 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AboutPage from './components/newsapi/About';
+import {ContactPage} from './components/newsapi/Contact';
+import TermOfService from './components/newsapi/Tos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <BrowserRouter>
+    <Routes>
+      <Route path = "/" element = {<App/>}>
+        <Route path='About' element={<AboutPage/>}/>
+        <Route path='Contact' element={<ContactPage/>}/>
+        <Route path='tos' element={<TermOfService/>}/>
+      </Route>
+    </Routes>
+   </BrowserRouter>
   </React.StrictMode>
 );
 
