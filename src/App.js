@@ -1,7 +1,8 @@
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/newsapi/Navbar'
-import SearchFungsi from './components/newsapi/SearchFung';
+// import SearchFungsi from './components/newsapi/SearchFung';
+import Redux from './components/Redux';
 function App() {
   return (
     <div className="App">
@@ -9,10 +10,11 @@ function App() {
        
        <h1>Portal Web Berita</h1>
        
-       <div className='Berita-container'>
+       {/* <div className='Berita-container'>
        <SearchFungsi/>
-       </div>
-       <Outlet/>
+       </div> */}
+       <Redux/>
+       
     </div>
   );
 }
