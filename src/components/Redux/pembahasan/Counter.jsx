@@ -5,7 +5,7 @@ import {  decreementWitchCheckingAction, increement } from "../../../app/Counter
 
 function Counter  () {
     const {count} = useSelector (state => state.counter)
-    const dispatch = useDispatch
+    const dispatch = useDispatch()
     return (
         <div>
            
